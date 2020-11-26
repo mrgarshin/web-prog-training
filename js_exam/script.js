@@ -227,7 +227,7 @@ function task20() {
 	let div = document.querySelector('.div');
 	div.lastChild.textContent = '!';
 	function readyPosition() {
-		alert("Готово: text' теперь стал '!'");
+		alert("Готово: 'text' теперь стал '!'");
 	}
 	setTimeout(readyPosition, 200);
 }
