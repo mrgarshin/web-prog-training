@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Зачёт по JS.</title>
+	<style>
+		h1{
+			text-align: center;
+		}
+		table {
+			margin: auto;
+		}
+		th, td {
+			border: 1px solid black;
+		}
+		body {
+			margin: auto;
+			margin: 15px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Гаршин Сергей. Вариант 4.</h1>
+	<table>
+		<th>№	</th>
+		<th>Текст задачи</th>
+		<th>Ответ</th>
+		<tr>
+			<td>1</td>
+			<td>Создайте переменные a=10 и b=2. Выведите на экран их сумму, разность,произведение и частное (результат деления)</td>
+			<td><button onclick=task1();>Ответ: task1();</button> </td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Создайте ассоциативный массив (объект) заработных плат obj. Выведите на экран зарплату Пети и Коли. var obj = {'Коля':'1000', 'Вася':'500', 'Петя':'200'};</td>
+			<td><button onclick=task2();>Ответ: task2();</button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Если переменная a равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.</td>
+			<td><button onclick=task3();>Ответ: task3();</button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Дан объект obj с ключами 'Минск', 'Москва', 'Киев' с элементами 'Беларусь', 'Россия', 'Украина'. С помощью цикла for-in выведите на экран строки такого формата: 'Минск - это Беларусь.'.</td>
+			<td><button onclick=task4();>Ответ: task4();</button></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Найдите квадратный корень из 245.</td>
+			<td><button onclick=task5();>Ответ: task5();</button></td>
+		</tr>	
+		<tr>
+			<td>6</td>
+			<td>Дана строка 'js'. Сделайте из нее строку 'JS'.</td>
+			<td><button onclick=task6();>Ответ: task6();</button></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].</td>
+			<td><button onclick=task7();>Ответ: task7();</button></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Получите url-адрес текущей страницы и проверьте, что строка заканчивается на .php.</td>
+			<td><button onclick=task8();>Ответ: task8();</button></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td> Сделайте функцию, которая отнимает от первого числа второе и делит на третье.3</td>
+			<td><button onclick=task9();>Ответ: task9();</button></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Дан массив с числами. Проверьте, что в этом массиве есть число 5. Если есть - выведите 'да', а если нет - выведите 'нет'.</td>
+			<td><button onclick=task10();>Ответ: task10();</button></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td> Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны - пусть функция вернет true, а если не равны - false.</td>
+			<td><button onclick=task11();>Ответ: task11();</button></td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>Нарисуйте пирамиду, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:</td>
+			<td><button onclick=task12();>Ответ: task12(); в консоли</button></td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td> Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти.</td>
+			<td><button onclick=task13();>Ответ: task13();</button></td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>Сделайте функцию getDigitsSum (digit - это цифра), которая параметром принимает целое число и возвращает сумму его цифр.</td>
+			<td><button onclick=task14();>Ответ: task14();</button></td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>Дана строка, например, '123456'. Сделайте из нее '214365'.</td>
+			<td><button onclick=task15();>Ответ: task15();  в консоли</button></td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры. И так, пока сумма не станет однозначным числом (9 и менее).</td>
+			<td><button onclick=task16();>Ответ: task16();</button> </td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>Заполните массив 10-ю иксами с помощью цикла.</td>
+			<td><button onclick=task17();>Ответ: task17();</button></td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>Выведите на экран текущий месяц.</td>
+			<td><button onclick=task18();>Ответ: task18();</button></td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>Дана кнопка. По нажатию на эту кнопку выведите высоту окна браузера.</td>
+			<td><button class="task19" onclick="alert('Высота браузера: ' + document.documentElement.clientHeight + 'px')">Высота браузера скрывается здесь!</button></td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>Дан див. Внутри него вначале находится span, а затем просто текст: &lt;div&gt;&lt;span&gt;span&lt;/span&gt; text &lt;/div&gt; Поменяйте текст на восклицательный знак:
+			<div class="div"><span>span</span> text </div>
+			</td>
+			<td><button onclick=task20();>Ответ: task20();</button></td>
+		</tr>
+	</table>
+	<script src="script.js"></script>
+</body>
+</html>

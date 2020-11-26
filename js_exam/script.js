@@ -89,8 +89,10 @@ function task9() {
 
 function task10() {
 	let arr = [1, 2, 3, 4, 5, 6 ];
+	console.log(arr);
 	if (arr.includes(5)) alert('Да'); 
 	else alert('Нет');
+
 };
 
 // 11. Задача. Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны -
@@ -128,6 +130,7 @@ function task12() {
 function task13() {
 	let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 	let a = 1;
+	console.log(arr);
 	let result = arr.reduce(function(sum, number) {
 		if (sum > 10) {
 			alert(a);
