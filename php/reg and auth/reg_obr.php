@@ -37,7 +37,7 @@ if ($password != $passwordCheck) {
     exit("Пароли не совпадают!");
 }
 //Функции для шифровки md5(),
-$password = password_hash("$password, PASSWORD_BCRYPT");
+$password = password_hash($password, PASSWORD_BCRYPT);
 
 //Подключаемся к БД.
 
