@@ -11,18 +11,10 @@ if(empty($login) || empty($password) || empty($name) || empty($lastname) || empt
     exit("Не все поля заполнены");
 }
 
-$password = password_hash ($password, PASSWORD_BCRYPT);
+$password = password_hash($password, PASSWORD_BCRYPT);
 
-$dbhost = "localhost";
-$dbuser = "z92587l2_reg";
-$dbpass = "WYhn8Rd%";
-$dbname = "z92587l2_reg";
-$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-$mysqli->set_charset("utf-8");
+require_once("components/db.php");
 
-if ($mysqli->connect_error) {
-  die("Не удалось подключиться к БД ".$mysqli->connect_error);
-}
 $result = $mysqli->query("SELECT * FROM `users` WHERE `login`='$login'")->fetch_assoc();
 if(isset($result) ) {
     exit("Такой пользователь уже существует");
@@ -34,5 +26,3 @@ if ($result) {
 } else {
     exit("Не удалось добавить пользователя.");
 }
-
-
