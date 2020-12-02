@@ -22,7 +22,7 @@ if(isset($result) ) {
 
 $result = $mysqli->query("INSERT INTO `users`(`login`, `password`, `name`, `lastname`, `birthday`) VALUES ('$login', '$password', '$name', '$lastname', '$birthday')");
 if ($result) {
-    exit("Пользователь $login успешно добавлен.");
+    exit("Пользователь $login успешно добавлен. . <script>setTimeout((location.href = 'lk.php'), 9000)</script>");
 } else {
     exit("Не удалось добавить пользователя.");
 }
