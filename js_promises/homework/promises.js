@@ -38,8 +38,8 @@ function showModalWindow() {
 	return new Promise(function(resolve, reject) {
 		let modalWindow = document.querySelector(".modal-window");
 		modalWindow.style.opacity = "1";		
-		setTimeout(() => {
+		 modalWindow.ontransitionend = () => {
 			resolve() 
-		}, 1000)
+		}
 	});
 }
