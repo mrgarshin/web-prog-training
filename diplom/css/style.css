@@ -1,0 +1,152 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+ul {
+	list-style: none;
+}
+div {
+	box-sizing: border-box;
+}
+header {
+	background: url(../img/main.png) no-repeat center top / cover;
+	height: 100vh;
+}
+section:nth-child(odd) {
+	background: #f7f7f7;
+}
+.container {
+	margin: 0 auto;
+	width: 930px;
+}
+.clearfix {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.logo {
+	float: left;
+	margin-top: 20px;
+	max-width: 100px;
+}
+nav {
+	color: white;		
+	float: right;
+	margin-top: 55px;
+}
+.nav-menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.nav-menu li {
+	margin-right: 40px;
+	float: left;
+	display: block;
+}
+.nav-menu a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.titles {
+
+}
+.titles{
+	color: white;
+	margin-top: 150px;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.header-button {
+	background: #fed136;
+	color: #484543;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+.main-container {
+	padding: 80px 0;
+}
+.title h2 {
+	margin: 0;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.title p {
+	color: #777777;
+	text-align: center;
+	font-size: 16px;
+}
+.ican {
+	margin-top: 30px;
+	display: flex;	
+	justify-content: space-between;
+}
+.ican__item {
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+.ican__item-img {
+	max-height: 120px;
+	max-width: 120px;
+}
+.ican__item h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.ican__item p {
+	color: #777777;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.event-container {
+	width: 900px;
+	height: 80px;
+	margin: 0;
+    display: block;
+    padding: 12px 35px 12px 12px;
+    border-top: 1px solid #ebedee;
+    position: relative;
+}
+.event-date {
+	float: left;
+}
+.event-date__day {
+	margin: 0;
+	font-size: 50px;
+}
+.event-date__month {
+	margin: 0;
+	font-size: 25px;
+}
+.event-info {
+	text-align: left;
+	float: right;
+	width: 700px;
+}
+.event-info__place {
+
+}
+.event-info__description{
+
+}
+
+footer {
+	padding-top: 100px;
+	height: 100px;
+	background: url(../img/footer.png) no-repeat center top / cover;;
+}
