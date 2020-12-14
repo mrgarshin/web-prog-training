@@ -1,25 +1,4 @@
 "use strict"
-//Кнопка "наверх";
-function trackScroll() {
-	let scrolled = window.pageYOffset;
-	let height = document.documentElement.clientHeight;
-	if (scrolled > height) {
-	  scrollUp.classList.add('scroll-up-active');
-	} else {
-	  scrollUp.classList.remove('scroll-up-active');
-	}
-}
-
-function backToTop() {
-	if (window.pageYOffset > 0) {
-	  window.scrollTo (top)
-	}
-}
-
-let scrollUp = document.querySelector('.scroll-up');
-
-window.addEventListener('scroll', trackScroll);
-scrollUp.addEventListener('click', backToTop);
 
 //Слайдер;
 
@@ -52,7 +31,30 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";    
 }
 
+//Кнопка "наверх";
+function trackScroll() {
+    let scrolled = window.pageYOffset;
+    let height = document.documentElement.clientHeight;
+    if (scrolled > height) {
+      scrollUp.classList.add('scroll-up-active');
+    } else {
+      scrollUp.classList.remove('scroll-up-active');
+    }``
+}
+
+function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollTo (top)
+    }
+}
+
+let scrollUp = document.querySelector('.scroll-up');
+
+window.addEventListener('scroll', trackScroll);
+scrollUp.addEventListener('click', backToTop);
+
 //Модалное окно после отправки формы
+
 let showModalButton = document.querySelector(".button");
 let modalWindow = document.querySelector(".modal-window");
 let body = document.querySelector("body");
@@ -66,8 +68,11 @@ function showModal() {
 
 function closeModalWindow () {
     modalWindow.style.display = "none";
+    location.reload();
 }
+
 //Отправка формы
+
 let feedbackForm = document.querySelector(".feedback-form");
 feedbackForm.onsubmit = function(event) {
     event.preventDefault();
