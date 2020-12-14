@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(131, 160, 178, 0.9);
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+.navbar p {
+  margin-right: 5px;
+  font-size: 15px;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+a {
+  margin: 15px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: white;
+}
+.logo-area, .main-area, .about-area, .galery-area, .form-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 900px;
+  border-bottom: 1px solid black;
+}
+
+.text-part {
+  width: 65%;
+  height: 80%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(131, 160, 178, 0.9);
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer p {
+  margin-right: 5px;
+  font-size: 15px;
+}
+.exit {
+  cursor: pointer;
+  margin-right: 5%;
+  padding: 3px 15px;
+  color: white;
+  font-size: 28px;
+  background-color: rgb(178, 34, 34);
+}
+.exit:hover {
+  font-size: 30px;
+  background-color: red;
+}
+.form-area__table th, td {
+  border: 1px solid black;
+}
+.delete-button {
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(178, 34, 34);
+}
+.delete-button:hover {
+  background-color: red;
+}
+.error-text {
+    color:red;
+}

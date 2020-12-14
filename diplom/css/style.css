@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
 ul {
@@ -14,7 +16,6 @@ header {
 section:nth-child(odd) {
 	background: #f7f7f7;
 }
-
 .top-container {
 	height: 100px;
 	background-color: rgba(1,1, 1, 0.25);
@@ -28,11 +29,11 @@ section:nth-child(odd) {
 	display: table;
 	width: 100%;
 	clear: both;
-}
+}/*Навигационная панель, логотип и "Главный экран"*/
 .logo {
 	font-family: 'Pacifico', cursive;
 	float: left;
-	margin-top: 35px;
+	margin-top: 29px;
 	max-width: 80px;
 	color: white;
 	font-size: 30px;
@@ -48,12 +49,11 @@ nav {
 .nav-menu {
 	padding: 0;
 	margin: 0;
-	display: block;
+	
 }
 .nav-menu li {
 	margin-right: 40px;
 	float: left;
-	display: block;
 }
 .nav-menu a {
 	color: white;
@@ -73,6 +73,7 @@ nav {
 	margin-top: 30vh;
 }
 .button {
+	cursor: pointer;
 	background: #fed136;
 	color: #484543;
 	border-radius: 3px;
@@ -102,189 +103,105 @@ nav {
 	text-align: center;
 	font-size: 16px;
 }
-.ican {
-	margin-top: 30px;
-	display: flex;	
-	justify-content: space-between;
-}
-.ican__item {
-	width: 270px;
-	float: left;
-	text-align: center;
-}
-.ican__item-img {
-	max-height: 120px;
-	max-width: 120px;
-}
-.ican__item h3 {
-	font-size: 18px;
-	margin-bottom: 10px;
-}
-.ican__item p {
-	color: #777777;
-	font-size: 14px;
-	line-height: 1.5em;
-}
-.slider-wrapper{
-	width: 100%;
-	margin: 0 auto;
-}
-.slider-container{
-	overflow: hidden;
-	background-color: pink;
-}
-.slider-track {
-	display: flex;
-	background-color: yellow;
-}
-.slider-item {
-	height: 300px;	
-	min-width: 200px;	
-}
-.slider-item:nth-child(3n+1) {
-	background-color: red;
-}.slider-item:nth-child(3n+2) {
-	background-color: green;
-}.slider-item:nth-child(3n+3) {
-	background-color: blue;
-}
-.slider-buttons {
-	text-align: center;
-}
-.btn-back, .btn-next {
-	margin-top: 15px;
-	cursor: pointer;
-}
-.event-container {
-	width: 900px;
-	height: 80px;
-	margin: 0;
-    display: block;
-    padding: 12px 35px 12px 12px;
-    border-top: 1px solid #ebedee;
-    position: relative;
-}
-.event-date {
-	float: left;
-}
-.event-date__day {
-	margin: 0;
-	font-size: 50px;
-}
-.event-date__month {
-	margin: 0;
-	font-size: 25px;
-}
-.event-info {
-	text-align: left;
-	float: right;
-	width: 700px;
-}
-.event-info p, h2 {
-    padding: 1px;
-    margin: 0;    
-}
-
 .form-container {
 	margin-top: 80px;
 }
+
+/*О нас*/
+
+.about-container {
+	margin: 3% 5% 0 5%;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid rgba(189, 189, 189, 0.94);
+}
+.about-card {
+	margin: 5px 0px;
+	text-align: center;
+}
+.about-card__img, .about-card__name, .about-card__prof{
+	-webkit-box-shadow: 0px 15px 47px -17px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 15px 47px -17px rgba(0,0,0,0.48);
+	box-shadow: 0px 15px 47px -17px rgba(0,0,0,0.48);
+}
+.about-card__img {
+	margin: 0 3px;
+	max-width: 300px;
+	height: 250px;
+}
+.about-card__prof {
+	color: green;
+}
+
+/*Форма*/
+
 .form {
 	cursor: pointer;
 	width: 25%;
 	margin-right: 10px;
-	border: none;
+	border: 1px solid rgba(189, 189, 189, 0.94);
 	border-radius: 5px;
 	padding: 10px 30px;
+}
+.textarea {
+    margin-top:3px;
+    width: 91%;
 }
 footer {
 	width: 100%;
 	background-color: black;
-	padding: 25px 0 ;
+	padding: 5px 0;
 	color: white;
 	text-align: center;
 }
 .footer-text {
-	widows: 50%;
 	text-align: center;
 }
 .error-text {
     color:red;
 }
-/*Кнопка наверх*/
-.scroll-up {
-	opacity: 0.2;
-	position: fixed;
-	right: 50px;
-	bottom: 70px;
-	z-index: 100;
-	padding: 5px 5px;
-	border-radius: 5px;
-	border: 1px solid green;	
-	cursor: pointer;
-	text-align: center;
-	background: #fed136;
-	color: #484543;
-	visibility: hidden;
-	transition: .2s;
-	transform: translateY(25px);
-}
-.scroll-up a {
-	color: black;
-	text-decoration: none;
-	font-weight: bold;
-}
-.scroll-up:hover {
-	opacity: 1;
-}
-
-.scroll-up-active {
-	visibility: visible;
-	transform: translateX(0);
-}
 
 /*Слайдер*/
+
 .slider-wrapper{
 	max-width: 950px;
-
 }
 .slider{
     max-width: 100%;
     position: relative;
-    margin: auto;
+    margin:  auto;
     height: 500px;
 }
-
 .slider .item img {
     object-fit: cover;
     width: 100%;
     height: 500px;
 }
-
 .slider .previous, .slider .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    padding: 15px;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    font-size: 20px;
+    transition: 0.5s ease;
+    border-radius: 2px;
 }
 .slider .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 2px;
 }
-
 .slider .previous:hover,
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
-/*Модальное окно*/
+
+/*Модальное окно после формы*/
+
 .modal-window {
-	background-color: rgba(215, 215,225, 0.9);
+	background-color: rgba(189, 189, 189, 0.94);
 	z-index: 1000;
 	position: fixed;
 	min-height: 100%;
@@ -293,17 +210,57 @@ footer {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border: 1px solid black;
-	display:none;
+	display: none;
 }
 .modal-dialog {
 	text-align: center;
 	margin: 0 auto;
+
  	width: 300px;
- 	height: 300px;
+ 	height: 100px;
 }
 .modal-content {
-	margin-top: 50%;
+	text-align: center;
+	margin-top: 30%;
+	background-color: white;
+	padding: 10px 0px;
 }
 .modal-img {
-    margin-top: 40px;
+    margin-top: 60px;
 }
+
+
+/*Кнопка наверх*/
+
+.scroll-up {
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	z-index: 100;
+	visibility: hidden;
+	transition: .4s;
+	transform: translateY(30px);
+}
+.scroll-up__button {
+	font-size: 20px;
+	cursor: pointer;
+	padding: 12px 15px;
+	border-radius: 50%;
+	border: 1px solid black;	
+	text-align: center;
+	background: rgb(16, 134, 120);
+	color: white;
+	opacity: 0.3;
+}
+.scroll-up a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+.scroll-up__button:hover {
+	opacity: 0.9;
+}
+.scroll-up-active {
+	visibility: visible;
+	transform: translateX(0);
+}		
