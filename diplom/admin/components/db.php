@@ -1,8 +1,8 @@
 <?
 $dbhost = "localhost";
-$dbuser = "z92587l2_reg";
-$dbpass = "WYhn8Rd%";
-$dbname = "z92587l2_reg";
+$dbuser = 
+$dbpass = 
+$dbname = 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 $mysqli->set_charset("utf-8");
 
