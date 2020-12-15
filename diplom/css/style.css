@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -56,10 +59,14 @@ nav {
 	float: left;
 }
 .nav-menu a {
+	font-size: 15px;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+.nav-menu a:hover {
+	font-size: 16px;
 }
 .titles {
 	color: white;
@@ -211,6 +218,7 @@ footer {
 	transform: translate(-50%, -50%);
 	border: 1px solid black;
 	display: none;
+		
 }
 .modal-dialog {
 	text-align: center;
@@ -264,3 +272,41 @@ footer {
 	visibility: visible;
 	transform: translateX(0);
 }		
+
+/*Календарь*/
+
+.event-container {
+	width: 900px;
+	height: 80px;
+	margin: 20px 0;
+    display: block;
+    padding: 12px 35px 12px 12px;
+    border-top: 1px solid #ebedee;
+    position: relative;
+}
+.event-date {
+	float: left;
+}
+.event-date__day {
+	margin: 0;
+	font-size: 50px;
+}
+.event-date__month {
+	margin: 0;
+	font-size: 25px;
+}
+.event-info {
+	text-align: left;
+	float: right;
+	width: 700px;
+}
+.event-info p, h2 {
+    padding: 1px;
+    margin: 0;    
+}
+.event-info__place {
+
+}
+.event-info__description{
+
+}

@@ -191,7 +191,7 @@
 		<button class="scroll-up__button">&#9650;</button>
 	</div>
 	<script src="script.js"></script>
- 	<script src="js/wow.min.js"></script>
+ 	<script src="wow.min.js"></script>
 	  <script>
 	  new WOW().init();
 	  </script>
